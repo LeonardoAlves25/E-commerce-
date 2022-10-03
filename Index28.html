@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>  
+    <link rel="sortcut icon" href="img/icons8-shopping-16.png" type="image/x-icon">
+    <title>Online shopping</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="fa fa-bars"></div>
+
+        <section id="home">
+        <div class="content">
+        <h2>online</h2>
+        <h1>shopping</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Laboriosam vel pariatur libero doloribus recusandae nihil.</p>
+        <a href="#"><button>Shop now</button></a>
+
+        <div class="icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+
+        </div>
+        </div>
+
+        <div class="image">
+            <img src="img/Add to Cart-amico.svg">
+        </div>
+
+        </section>
+    </header>
+
+    <script>
+        
+        $(document).ready(function(){
+        
+        $('.fa-bars').click(function(){
+        $(this).toggleclass('fa-times');
+        $('nav').slideToggle();
+        });
+        
+        $('nav').click(function(){
+        $('fa-bars').removeclass('fa-times');
+        $(this).slideUp();
+        });
+    
+        });     
+
+    </script>
+</body>
+</html>
